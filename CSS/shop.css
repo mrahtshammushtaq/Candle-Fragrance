@@ -3,10 +3,11 @@
 /* ============================ */
 /* Top Controls */
 .shop-controls {
-  display: flex;
-  gap: 10px;
-  padding: 20px 8%;
-  background: #0d0d0d;
+	display: flex;
+	gap: 10px;
+	padding: 20px;
+	background: #0d0d0d;
+	flex-wrap: wrap;
 }
 
 .search-bar {
@@ -16,7 +17,12 @@
   border: 1px solid #f5c542;
   color: white;
 }
-
+#sortOption {
+	padding: 10px;
+}
+#categoryFilter {
+	padding: 10px;
+}
 /* Categories */
 .top-categories {
   padding: 40px 8%;
