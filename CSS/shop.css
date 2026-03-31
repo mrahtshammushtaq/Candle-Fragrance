@@ -548,4 +548,11 @@
     width: 70px;
     height: 70px;
   }
+	.shop-layout {
+  padding: 40px 20px;
+}
+	.products {
+	padding:80px 20px;
+	width: 100% !important;
+}
 }
