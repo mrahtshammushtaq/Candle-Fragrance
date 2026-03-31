@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fragrance Candles</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <!-- Header -->
+<header class="navbar">
+  <div class="logo">Candle Fragrance</div>
+
+  <nav>
+    <ul class="menu">
+      
+      <li><a href="/index.html">Home</a></li>
+
+      <!-- SHOP MEGA MENU -->
+      <li class="dropdown">
+        <a href="/shop.html">Shop ▾</a>
+
+        <div class="mega-menu">
+
+          <div class="mega-column">
+            <h4>Shop by Category</h4>
+            <a href="#">Luxury Candles</a>
+            <a href="#">Aromatherapy</a>
+            <a href="#">Gift Sets</a>
+            <a href="#">New Arrivals</a>
+          </div>
+
+          <div class="mega-column">
+            <h4>Collections</h4>
+            <a href="#">Signature Collection</a>
+            <a href="#">Seasonal Scents</a>
+            <a href="#">Limited Edition</a>
+            <a href="#">Best Sellers</a>
+          </div>
+
+       <div class="mega-column">
+  <h4>Popular Picks</h4>
+
+  <div class="product-preview">
+    <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?w=200" alt="">
+    <p>Lavender Bliss</p>
+  </div>
+
+ <div class="product-preview">
+  <img src="https://picsum.photos/200/150" alt="Vanilla Candle">
+  <p>Vanilla Dream</p>
+</div>
+
+</div>
+
+        </div>
+      </li>
+
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+
+    </ul>
+  </nav>
+
+<div class="icons">
+  <i class="fa-solid fa-magnifying-glass icon"></i>
+  <i class="fa-regular fa-heart icon"></i>
+
+  <div class="cart-icon" onclick="openCart()">
+    <i class="fa-solid fa-cart-shopping icon"></i>
+    <span id="cart-count">0</span>
+  </div>
+</div>
+
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- Promobar Row -->
+ <div class="promo-bar">
+  <div class="promo-track">
+    <span>🔥 Free Shipping on Orders Over $50</span>
+    <span>✨ New Collection Just Dropped</span>
+    <span>🕯️ Handcrafted Luxury Candles</span>
+    <span>🎁 Perfect Gift for Every Occasion</span>
+    
+    <!-- Duplicate for seamless loop -->
+    <span>🔥 Free Shipping on Orders Over $50</span>
+    <span>✨ New Collection Just Dropped</span>
+    <span>🕯️ Handcrafted Luxury Candles</span>
+    <span>🎁 Perfect Gift for Every Occasion</span>
+  </div>
+</div>
+
+<!-- HERO SECTION HTML -->
+ <section class="hero">
+  <div class="hero-content">
+    <h1>Illuminate Your Space</h1>
+    <p>Handcrafted luxury candles that transform moments into memories</p>
+    <div class="hero-buttons">
+      <button class="primary">Shop Collection</button>
+      <button class="secondary">Explore Scents</button>
+    </div>
+  </div>
+  <!-- IMAGE PLACEHOLDER -->
+  <div class="hero-image">
+    <img src="https://picsum.photos/600/400" alt="Candle">
+  </div>
+  <div class="bubbles">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</section>
+
+<!-- PRODUCT SECTION HTML -->
+ <section class="products">
+
+  <h2>Signature Collection</h2>
+  <p>Discover our most beloved scents</p>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80" alt="Vanilla Dream">
+      <h3>Vanilla Dream</h3>
+      <p>$30</p>
+      <button class="add-to-cart">
+  Add to Cart
+</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=400&q=80" alt="Lavender Bliss">
+      <h3>Lavender Bliss</h3>
+      <p>$25</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80" alt="Ocean Breeze">
+      <h3>Ocean Breeze</h3>
+      <p>$28</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED SPLIT LAYOUT HTML -->
+ <section class="featured fade-up">
+  <div class="featured-container">
+    <!-- IMAGE SIDE -->
+    <div class="featured-image">
+      <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80" alt="">
+    </div>
+
+    <!-- CONTENT SIDE -->
+    <div class="featured-content">
+      <h2>Luxury Collection</h2>
+      <p>Experience our handcrafted luxury candles designed to elevate your space with calming fragrances and elegant design.</p>
+      <ul>
+        <li>✨ Hand poured with care</li>
+        <li>🌿 Natural soy wax</li>
+        <li>🔥 Long lasting burn</li>
+      </ul>
+      <button>Explore Collection</button>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS  -->
+ <section class="testimonials fade-up">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <p>"The candles smell amazing and last so long. Absolutely love the quality!"</p>
+      <h4>- Sarah</h4>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"Very premium feel. The fragrance fills my entire room. Highly recommended."</p>
+      <h4>- Ahmed</h4>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"Perfect gift idea! Beautiful packaging and incredible scent."</p>
+      <h4>- Emily</h4>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORY SHOWCASE -->
+ <section class="product-filters fade-up">
+
+  <h2>Browse Products</h2>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="luxury">Luxury</button>
+    <button class="filter-btn" data-filter="aroma">Aromatherapy</button>
+    <button class="filter-btn" data-filter="gift">Gift Sets</button>
+  </div>
+
+</section>
+ <section class="categories fade-up">
+  <h2>Shop by Category</h2>
+  <div class="category-grid">
+
+    <div class="product-card luxury">
+  <img src="...">
+  <h3>Vanilla Dream</h3>
+  <p>$30</p>
+</div>
+
+<div class="product-card aroma">
+  <img src="...">
+  <h3>Lavender Bliss</h3>
+  <p>$25</p>
+</div>
+
+<div class="product-card gift">
+  <img src="...">
+  <h3>Gift Box Set</h3>
+  <p>$50</p>
+</div>
+  </div>
+</section>
+<!-- HORIZONTAL SCROLL (SCROLLABLE PRODUCTS) HTML -->
+ <section class="scroll-products fade-up">
+  <h2>Best Sellers</h2>
+  <div class="scroll-container">
+    <div class="scroll-card">
+      <img src="https://images.unsplash.com/photo-1602524811105-5b2a8f3c6e9e?auto=format&fit=crop&w=400&q=80">
+      <h3>Vanilla Dream</h3>
+      <p>$30</p>
+    </div>
+    <div class="scroll-card">
+      <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=400&q=80">
+      <h3>Lavender Bliss</h3>
+      <p>$25</p>
+    </div>
+    <div class="scroll-card">
+      <img src="https://images.unsplash.com/photo-1616627986315-7b6b3f5e8c52?auto=format&fit=crop&w=400&q=80">
+      <h3>Ocean Breeze</h3>
+      <p>$28</p>
+    </div>
+    <div class="scroll-card">
+      <img src="https://images.unsplash.com/photo-1611930022073-84f5f0c2e3f7?auto=format&fit=crop&w=400&q=80">
+      <h3>Rose Glow</h3>
+      <p>$32</p>
+    </div>
+     <div class="scroll-card">
+      <img src="https://images.unsplash.com/photo-1611930022073-84f5f0c2e3f7?auto=format&fit=crop&w=400&q=80">
+      <h3>Rose Glow</h3>
+      <p>$32</p>
+    </div>
+     <div class="scroll-card">
+      <img src="https://images.unsplash.com/photo-1611930022073-84f5f0c2e3f7?auto=format&fit=crop&w=400&q=80">
+      <h3>Rose Glow</h3>
+      <p>$32</p>
+    </div>
+     <div class="scroll-card">
+      <img src="https://images.unsplash.com/photo-1611930022073-84f5f0c2e3f7?auto=format&fit=crop&w=400&q=80">
+      <h3>Rose Glow</h3>
+      <p>$32</p>
+    </div>
+     <div class="scroll-card">
+      <img src="https://images.unsplash.com/photo-1611930022073-84f5f0c2e3f7?auto=format&fit=crop&w=400&q=80">
+      <h3>Rose Glow</h3>
+      <p>$32</p>
+    </div>
+  </div>
+</section>
+<!-- NEWSLETTER / EMAIL SIGNUP (WITH CTA) -->
+ <section class="newsletter-row fade-up">
+  <div class="newsletter-container">
+    <div class="newsletter-content">
+      <h2>Join Our Candle Club</h2>
+      <p>Get exclusive offers, early access, and 10% OFF your first order</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+      <small>No spam. Only beautiful scents.</small>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND STORY / WHY US -->
+ <section class="brand-story fade-up">
+  <div class="brand-container">
+    <div class="brand-text">
+      <h2>Crafted With Passion</h2>
+      <p>
+        Our candles are more than just fragrances — they are experiences.
+        Each piece is handcrafted with precision, using premium natural ingredients
+        to create a soothing and luxurious ambiance.
+      </p>
+      <div class="brand-stats">
+        <div>
+          <h3>500+</h3>
+          <p>Happy Customers</p>
+        </div>
+
+        <div>
+          <h3>50+</h3>
+          <p>Unique Scents</p>
+        </div>
+
+        <div>
+          <h3>5★</h3>
+          <p>Top Rated</p>
+        </div>
+      </div>
+    </div>
+    <div class="brand-image">
+      <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80">
+    </div>
+  </div>
+</section>
+<!-- INSTAGRAM / GALLERY (VISUAL GRID) -->
+ <section class="gallery fade-up">
+
+  <h2>Follow Our Journey</h2>
+  <p>@candlefragrance</p>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1602524811105-5b2a8f3c6e9e?auto=format&fit=crop&w=600&q=80">
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=80">
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1616627986315-7b6b3f5e8c52?auto=format&fit=crop&w=600&q=80">
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1611930022073-84f5f0c2e3f7?auto=format&fit=crop&w=600&q=80">
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1616627459053-4c4f9f3e6c5b?auto=format&fit=crop&w=600&q=80">
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1604644401890-0bd678c83788?auto=format&fit=crop&w=600&q=80">
+    </div>
+
+  </div>
+
+</section>
+<!-- FAQ (ACCORDION STYLE) -->
+ <section class="faq fade-up">
+
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <div class="faq-question">How long do your candles burn?</div>
+      <div class="faq-answer">
+        Our candles burn between 40–60 hours depending on size and usage.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Are your candles natural?</div>
+      <div class="faq-answer">
+        Yes, we use 100% natural soy wax and premium essential oils.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Do you offer worldwide shipping?</div>
+      <div class="faq-answer">
+        Yes, we ship globally with reliable delivery partners.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I return a product?</div>
+      <div class="faq-answer">
+        Yes, we offer a 7-day return policy if you're not satisfied.
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PREMIUM CTA BANNER -->
+<section class="cta fade-up">
+
+  <div class="cta-content">
+
+    <h2>Transform Your Space Today</h2>
+    <p>Discover luxury handcrafted candles made to elevate your mood and environment</p>
+
+    <button>Shop Now</button>
+
+  </div>
+
+</section>
+<!-- Footer -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-col brand">
+      <h3>Candle Fragrance</h3>
+      <p>Handcrafted luxury candles that transform your space into a peaceful sanctuary.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="#">Luxury Candles</a>
+      <a href="#">Aromatherapy</a>
+      <a href="#">Gift Sets</a>
+      <a href="#">New Arrivals</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Help</h4>
+      <a href="#">FAQ</a>
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="footer-col newsletter">
+      <h4>Stay Updated</h4>
+      <p>Get updates on new scents and offers.</p>
+
+      <div class="newsletter-box">
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+
+      <div class="socials">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Candle Fragrance. All rights reserved.</p>
+  </div>
+
+</footer>
+
+
+<!-- CART SIDEBAR -->
+<!-- OVERLAY -->
+<div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+
+<!-- CART MODAL -->
+<div class="cart-modal" id="cartSidebar">
+
+  <button class="close-btn" onclick="closeCart()">✖</button>
+
+  <h2>Your Cart</h2>
+
+  <div id="cart-items"></div>
+
+  <div class="cart-footer">
+    <h3>Total: $<span id="cart-total">0</span></h3>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+</div>
+<script src="JS/script.js"></script>
+</body>
+</html>

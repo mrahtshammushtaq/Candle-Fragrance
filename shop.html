@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragrance Candles</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="CSS/shop.css">
+</head>
+<body>
+ <!-- Header -->
+<header class="navbar">
+  <div class="logo">Candle Fragrance</div>
+  <nav>
+    <ul class="menu">
+      <li><a href="/index.html">Home</a></li>
+      <!-- SHOP MEGA MENU -->
+      <li class="dropdown">
+        <a href="/shop.html">Shop ▾</a>
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h4>Shop by Category</h4>
+            <a href="#">Luxury Candles</a>
+            <a href="#">Aromatherapy</a>
+            <a href="#">Gift Sets</a>
+            <a href="#">New Arrivals</a>
+          </div>
+          <div class="mega-column">
+            <h4>Collections</h4>
+            <a href="#">Signature Collection</a>
+            <a href="#">Seasonal Scents</a>
+            <a href="#">Limited Edition</a>
+            <a href="#">Best Sellers</a>
+          </div>
+       <div class="mega-column">
+  <h4>Popular Picks</h4>
+  <div class="product-preview">
+    <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?w=200" alt="">
+    <p>Lavender Bliss</p>
+  </div>
+ <div class="product-preview">
+  <img src="https://picsum.photos/200/150" alt="Vanilla Candle">
+  <p>Vanilla Dream</p>
+</div>
+</div>
+        </div>
+      </li>
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+
+    </ul>
+  </nav>
+<div class="icons">
+  <i class="fa-solid fa-magnifying-glass icon"></i>
+  <i class="fa-regular fa-heart icon"></i>
+  <div class="cart-icon" onclick="openCart()">
+    <i class="fa-solid fa-cart-shopping icon"></i>
+    <span id="cart-count">0</span>
+  </div>
+</div>
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+</header>
+<!-- Promobar Row -->
+ <div class="promo-bar">
+  <div class="promo-track">
+    <span>🔥 Free Shipping on Orders Over $50</span>
+    <span>✨ New Collection Just Dropped</span>
+    <span>🕯️ Handcrafted Luxury Candles</span>
+    <span>🎁 Perfect Gift for Every Occasion</span>
+    <!-- Duplicate for seamless loop -->
+    <span>🔥 Free Shipping on Orders Over $50</span>
+    <span>✨ New Collection Just Dropped</span>
+    <span>🕯️ Handcrafted Luxury Candles</span>
+    <span>🎁 Perfect Gift for Every Occasion</span>
+  </div>
+</div>
+
+<!-- TOP SEARCH + FILTER BAR -->
+<section class="shop-controls">
+ <input type="text" placeholder="Search candles..." class="search-bar" id="searchInput">
+
+<select id="categoryFilter">
+  <option value="all">All Categories</option>
+  <option value="Luxury">Luxury</option>
+  <option value="Aromatherapy">Aromatherapy</option>
+  <option value="Gift Sets">Gift Sets</option>
+</select>
+
+<select id="sortOption">
+  <option value="default">Sort By</option>
+  <option value="low">Price Low to High</option>
+  <option value="high">Price High to Low</option>
+  <option value="new">Newest</option>
+</select>
+</section>
+
+
+<section class="category-slider">
+    <div class="category-bar-flex">
+  <h2>Shop by Category</h2>
+  <div class="category-btn">
+  <button class="slide-btn left">‹</button>
+<button class="slide-btn right">›</button>
+</div>
+</div>
+  <div class="slider-wrapper">
+    <div class="category-item" onclick="location.href='category.html'">
+      <div class="circle">
+        <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg" />
+      </div>
+      <p>Luxury</p>
+    </div>
+    <div class="category-item" onclick="location.href='category.html'">
+      <div class="circle">
+        <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg" />
+      </div>
+      <p>Aromatherapy</p>
+    </div>
+    <div class="category-item" onclick="location.href='category.html'">
+      <div class="circle">
+        <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg" />
+      </div>
+      <p>Gift Sets</p>
+    </div>
+    <div class="category-item" onclick="location.href='category.html'">
+      <div class="circle">
+        <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg" />
+      </div>
+      <p>Vanilla</p>
+    </div>
+     <div class="category-item" onclick="location.href='category.html'">
+      <div class="circle">
+        <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg" />
+      </div>
+      <p>Floral Essence</p>
+    </div>
+     <div class="category-item" onclick="location.href='category.html'">
+      <div class="circle">
+        <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg" />
+      </div>
+      <p>Woody Notes</p>
+    </div>
+     <div class="category-item" onclick="location.href='category.html'">
+      <div class="circle">
+        <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg" />
+      </div>
+      <p>Citrus Burst</p>
+    </div>
+     <div class="category-item" onclick="location.href='category.html'">
+      <div class="circle">
+        <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg" />
+      </div>
+      <p>Fresh Linen</p>
+    </div>
+     <div class="category-item" onclick="location.href='category.html'">
+      <div class="circle">
+       <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg" />
+      </div>
+      <p>Gourmand</p>
+    </div>
+     <div class="category-item" onclick="location.href='category.html'">
+      <div class="circle">
+        <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg" />
+      </div>
+      <p>Spiced Warmth</p>
+    </div>
+     <div class="category-item" onclick="location.href='category.html'">
+      <div class="circle">
+        <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg" />
+      </div>
+      <p>Calm & Serenity</p>
+    </div>
+     <div class="category-item" onclick="location.href='category.html'">
+      <div class="circle">
+        <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg" />
+      </div>
+      <p>Romance</p>
+    </div>
+     <div class="category-item" onclick="location.href='category.html'">
+      <div class="circle">
+        <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg" />
+      </div>
+      <p>Seasonal Scents</p>
+    </div>
+     <div class="category-item" onclick="location.href='category.html'">
+      <div class="circle">
+        <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg" />
+      </div>
+      <p>Festive Collection</p>
+    </div>
+       <div class="category-item" onclick="location.href='category.html'">
+      <div class="circle">
+        <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg" />
+      </div>
+      <p>Minimal Collection</p>
+    </div>
+    <!-- Add more (product categories here) -->
+  </div>
+
+</section>
+<!-- SHOP LAYOUT -->
+ 
+<section class="shop-layout">
+  <!-- Sidebar -->
+   <button id="openFilter">☰ Filters</button> 
+ <aside class="sidebar" id="sidebar">
+    <button id="closeFilter">✖</button>
+  <h3>Filter</h3>
+
+  <!-- PRICE -->
+  <p>Max Price: $<span id="priceValue">50</span></p>
+  <input type="range" id="priceRange" min="0" max="100" value="50">
+<!-- CATEGORY -->
+<p>Category</p>
+<div id="categoryFilters"></div>
+
+<!-- FRAGRANCE -->
+<p>Fragrance</p>
+<div id="fragranceFilters"></div>
+</aside>
+  <!-- Products -->
+  <div class="products">
+
+  <!-- PRODUCT LIST -->
+  <div class="product-card badge" data-name="Lavender Bliss" data-price="25" data-category="Aromatherapy" data-fragrance="Lavender">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Lavender Bliss</h3>
+    <p>$25</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Vanilla Dream" data-price="30" data-category="Luxury" data-fragrance="Vanilla">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Vanilla Dream</h3>
+    <p>$30</p>
+ <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Luxury Rose Candle" data-category="Luxury" data-fragrance="Rose" data-price="25">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Luxury Rose Candle</h3>
+    <p>$25</p>
+   <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Vanilla Dream Candle" data-category="Classic" data-fragrance="Vanilla" data-price="18">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Vanilla Dream Candle</h3>
+    <p>$18</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Lavender Calm Candle" data-category="Aromatherapy" data-fragrance="Lavender" data-price="20">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Lavender Calm Candle</h3>
+    <p>$20</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Ocean Breeze Candle" data-category="Fresh" data-fragrance="Ocean" data-price="22">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Ocean Breeze Candle</h3>
+    <p>$22</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Citrus Burst Candle" data-category="Citrus" data-fragrance="Citrus" data-price="19">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Citrus Burst Candle</h3>
+    <p>$19</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Chocolate Delight Candle" data-category="Gourmet" data-fragrance="Chocolate" data-price="28">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Chocolate Delight Candle</h3>
+    <p>$28</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Mint Fresh Candle" data-category="Fresh" data-fragrance="Mint" data-price="17">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Mint Fresh Candle</h3>
+    <p>$17</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Jasmine Bliss Candle" data-category="Floral" data-fragrance="Jasmine" data-price="21">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Jasmine Bliss Candle</h3>
+    <p>$21</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Wooden Oud Candle" data-category="Luxury" data-fragrance="Oud" data-price="35">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Wooden Oud Candle</h3>
+    <p>$35</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Spicy Cinnamon Candle" data-category="Spicy" data-fragrance="Cinnamon" data-price="23">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Spicy Cinnamon Candle</h3>
+    <p>$23</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Berry Blast Candle" data-category="Fruity" data-fragrance="Berry" data-price="20">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Berry Blast Candle</h3>
+    <p>$20</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Green Tea Candle" data-category="Herbal" data-fragrance="Green Tea" data-price="19">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Green Tea Candle</h3>
+    <p>$19</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Lemon Zest Candle" data-category="Citrus" data-fragrance="Lemon" data-price="16">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Lemon Zest Candle</h3>
+    <p>$16</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Amber Nights Candle" data-category="Luxury" data-fragrance="Amber" data-price="32">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Amber Nights Candle</h3>
+    <p>$32</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Coffee Aroma Candle" data-category="Gourmet" data-fragrance="Coffee" data-price="24">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Coffee Aroma Candle</h3>
+    <p>$24</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Rose Petal Candle" data-category="Floral" data-fragrance="Rose" data-price="22">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Rose Petal Candle</h3>
+    <p>$22</p>
+    <button class="add-to-cart" >Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Vanilla Luxe Candle" data-category="Luxury" data-fragrance="Vanilla" data-price="30">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Vanilla Luxe Candle</h3>
+    <p>$30</p>
+    <button class="add-to-cart" >Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Eucalyptus Fresh Candle" data-category="Aromatherapy" data-fragrance="Eucalyptus" data-price="21">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Eucalyptus Fresh Candle</h3>
+    <p>$21</p>
+    <button class="add-to-cart" >Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Peach Glow Candle" data-category="Fruity" data-fragrance="Peach" data-price="18">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Peach Glow Candle</h3>
+    <p>$18</p>
+    <button class="add-to-cart" >Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Sandalwood Calm Candle" data-category="Luxury" data-fragrance="Sandalwood" data-price="34">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Sandalwood Calm Candle</h3>
+    <p>$34</p>
+    <button class="add-to-cart" >Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Strawberry Love Candle" data-category="Fruity" data-fragrance="Strawberry" data-price="19">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Strawberry Love Candle</h3>
+    <p>$19</p>
+    <button class="add-to-cart" >Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Relax Therapy Candle" data-category="Aromatherapy" data-fragrance="Lavender" data-price="26">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Relax Therapy Candle</h3>
+    <p>$26</p>
+    <button class="add-to-cart" >Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Golden Vanilla Candle" data-category="Classic" data-fragrance="Vanilla" data-price="27">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Golden Vanilla Candle</h3>
+    <p>$27</p>
+    <button class="add-to-cart" >Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Mystic Oud Candle" data-category="Luxury" data-fragrance="Oud" data-price="40">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Mystic Oud Candle</h3>
+    <p>$40</p>
+    <button class="add-to-cart" >Add to Cart</button>
+  </div>
+
+  <div class="product-card" data-name="Tropical Coconut Candle" data-category="Fruity" data-fragrance="Coconut" data-price="23">
+    <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+    <h3>Tropical Coconut Candle</h3>
+    <p>$23</p>
+    <button class="add-to-cart" >Add to Cart</button>
+  </div>
+</div>
+  <p id="noResults" style="display:none; text-align:center; margin-top:20px;"></p>
+</section>
+
+<!-- Featured Products Slider -->
+ <section class="featured-products">
+
+  <div class="section-header">
+    <h2>🔥 Featured Candles</h2>
+    <div class="featured-nav">
+      <button id="featLeft">‹</button>
+      <button id="featRight">›</button>
+    </div>
+  </div>
+
+  <div class="featured-slider" id="featuredSlider">
+
+    <!-- CARD 1 -->
+    <div class="featured-card">
+      <span class="badge">Hot</span>
+      <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+      <h3>Lavender Bliss</h3>
+      <p>$25</p>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="featured-card">
+      <span class="badge">New</span>
+      <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+      <h3>Vanilla Dream</h3>
+      <p>$30</p>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="featured-card">
+      <span class="badge">Hot</span>
+      <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+      <h3>Rose Essence</h3>
+      <p>$28</p>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="featured-card">
+      <span class="badge">New</span>
+      <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+      <h3>Citrus Glow</h3>
+      <p>$22</p>
+    </div>
+
+  <!-- CARD 5 -->
+<div class="featured-card">
+  <span class="badge">Hot</span>
+  <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+  <h3>Lavender Bliss</h3>
+  <p>$25</p>
+</div>
+<!-- CARD 6 -->
+<div class="featured-card">
+  <span class="badge">New</span>
+  <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+  <h3>Vanilla Dream</h3>
+  <p>$30</p>
+</div>
+<!-- CARD 7 -->
+<div class="featured-card">
+  <span class="badge">Hot</span>
+  <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+  <h3>Rose Essence</h3>
+  <p>$28</p>
+</div>
+<!-- CARD 8 -->
+<div class="featured-card">
+  <span class="badge">New</span>
+  <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+  <h3>Citrus Glow</h3>
+  <p>$22</p>
+</div>
+<!-- CARD 9 -->
+<div class="featured-card">
+  <span class="badge">Hot</span>
+  <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+  <h3>Ocean Breeze</h3>
+  <p>$27</p>
+</div>
+<!-- CARD 10 -->
+<div class="featured-card">
+  <span class="badge">New</span>
+  <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+  <h3>Amber Nights</h3>
+  <p>$35</p>
+</div>
+<!-- CARD 11 -->
+<div class="featured-card">
+  <span class="badge">Hot</span>
+  <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+  <h3>Fresh Linen</h3>
+  <p>$24</p>
+</div>
+<!-- CARD 12 -->
+<div class="featured-card">
+  <span class="badge">New</span>
+  <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+  <h3>Spiced Vanilla</h3>
+  <p>$29</p>
+</div>
+<!-- CARD 13 -->
+<div class="featured-card">
+  <span class="badge">Hot</span>
+  <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+  <h3>Woodland Mist</h3>
+  <p>$32</p>
+</div>
+<!-- CARD 14 -->
+<div class="featured-card">
+  <span class="badge">New</span>
+  <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+  <h3>Peach Blossom</h3>
+  <p>$26</p>
+</div>
+<!-- CARD 15 -->
+<div class="featured-card">
+  <span class="badge">Hot</span>
+  <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+  <h3>Golden Sandalwood</h3>
+  <p>$38</p>
+</div>
+<!-- CARD 16 -->
+<div class="featured-card">
+  <span class="badge">New</span>
+  <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+  <h3>Berry Delight</h3>
+  <p>$23</p>
+</div>
+
+</div>
+</section>
+
+<!-- Deals Section -->
+<section class="deals-section">
+
+  <div class="section-header">
+    <h2>⚡ Flash Sale</h2>
+    <p>Ends in: <span id="countdown">00:00:00</span></p>
+  </div>
+
+  <div class="deals-slider" id="dealsSlider">
+
+    <!-- DEAL CARD -->
+    <div class="deal-card">
+      <span class="sale-badge">-20%</span>
+      <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+      <h3>Lavender Bliss</h3>
+      <p class="price">
+        <span class="new">$20</span>
+        <span class="old">$25</span>
+      </p>
+    </div>
+
+    <div class="deal-card">
+      <span class="sale-badge">-30%</span>
+      <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+      <h3>Vanilla Dream</h3>
+      <p class="price">
+        <span class="new">$21</span>
+        <span class="old">$30</span>
+      </p>
+    </div>
+
+    <div class="deal-card">
+      <span class="sale-badge">-15%</span>
+      <img src="https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg">
+      <h3>Rose Essence</h3>
+      <p class="price">
+        <span class="new">$24</span>
+        <span class="old">$28</span>
+      </p>
+    </div>
+
+    <!-- Add more like above -->
+
+  </div>
+</section>
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col brand">
+      <h3>Candle Fragrance</h3>
+      <p>Handcrafted luxury candles that transform your space into a peaceful sanctuary.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="#">Luxury Candles</a>
+      <a href="#">Aromatherapy</a>
+      <a href="#">Gift Sets</a>
+      <a href="#">New Arrivals</a>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <a href="#">FAQ</a>
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="footer-col newsletter">
+      <h4>Stay Updated</h4>
+      <p>Get updates on new scents and offers.</p>
+      <div class="newsletter-box">
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+      <div class="socials">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Candle Fragrance. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- CART SIDEBAR -->
+<!-- OVERLAY -->
+<div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+
+<!-- CART MODAL -->
+<div class="cart-modal" id="cartSidebar">
+
+  <button class="close-btn" onclick="closeCart()">✖</button>
+
+  <h2>Your Cart</h2>
+
+  <div id="cart-items"></div>
+
+  <div class="cart-footer">
+    <h3>Total: $<span id="cart-total">0</span></h3>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+</div>
+<div class="overlay" id="overlay"></div>
+<script src="JS/script.js"></script>
+<script src="JS/shop.js"></script>
+</body>
+</html>
